@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2C5FD499277466D500317AFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FD498277466D500317AFC /* AppDelegate.swift */; };
-		2C5FD49B277466D500317AFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FD49A277466D500317AFC /* SceneDelegate.swift */; };
 		2C5FD49D277466D500317AFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FD49C277466D500317AFC /* ViewController.swift */; };
 		2C5FD4A0277466D500317AFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FD49E277466D500317AFC /* Main.storyboard */; };
 		2C5FD4A2277466D600317AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FD4A1277466D600317AFC /* Assets.xcassets */; };
@@ -16,6 +15,7 @@
 		2C5FD4B0277466D600317AFC /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FD4AF277466D600317AFC /* AppTests.swift */; };
 		2C5FD4BA277466D600317AFC /* AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FD4B9277466D600317AFC /* AppUITests.swift */; };
 		2C5FD4BC277466D600317AFC /* AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FD4BB277466D600317AFC /* AppUITestsLaunchTests.swift */; };
+		2CD989E7277D82FB00D91453 /* BootDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD989E6277D82FB00D91453 /* BootDelegate.swift */; };
 		40FF0747CF82257DDCE9FDBE /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2365E97D818B3A5C0A99AB0 /* Pods_App.framework */; };
 		ADC10F8FF83D458FFD089088 /* Pods_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A328C83DB325D0F0773B530 /* Pods_AppTests.framework */; };
 		D29EA5A6E35F1DEBAAAA63FB /* Pods_App_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 889DD207F0016EBD02A9E857 /* Pods_App_AppUITests.framework */; };
@@ -44,7 +44,6 @@
 		1DD99668BA94F1A399D1532F /* Pods-App-AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-AppUITests.release.xcconfig"; path = "Target Support Files/Pods-App-AppUITests/Pods-App-AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2C5FD495277466D500317AFC /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5FD498277466D500317AFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C5FD49A277466D500317AFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2C5FD49C277466D500317AFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C5FD49F277466D500317AFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C5FD4A1277466D600317AFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +54,8 @@
 		2C5FD4B5277466D600317AFC /* AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5FD4B9277466D600317AFC /* AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITests.swift; sourceTree = "<group>"; };
 		2C5FD4BB277466D600317AFC /* AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2CCC0801277D87F70017DF17 /* Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
+		2CD989E6277D82FB00D91453 /* BootDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootDelegate.swift; sourceTree = "<group>"; };
 		2D3207BB0C988E56E197D18F /* Pods-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTests.release.xcconfig"; path = "Target Support Files/Pods-AppTests/Pods-AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		6E422CE800729193E1FF9AB9 /* Pods-AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTests.debug.xcconfig"; path = "Target Support Files/Pods-AppTests/Pods-AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		889DD207F0016EBD02A9E857 /* Pods_App_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,12 +128,13 @@
 			isa = PBXGroup;
 			children = (
 				2C5FD498277466D500317AFC /* AppDelegate.swift */,
-				2C5FD49A277466D500317AFC /* SceneDelegate.swift */,
 				2C5FD49C277466D500317AFC /* ViewController.swift */,
+				2CD989E6277D82FB00D91453 /* BootDelegate.swift */,
 				2C5FD49E277466D500317AFC /* Main.storyboard */,
 				2C5FD4A1277466D600317AFC /* Assets.xcassets */,
 				2C5FD4A3277466D600317AFC /* LaunchScreen.storyboard */,
 				2C5FD4A6277466D600317AFC /* Info.plist */,
+				2CCC0801277D87F70017DF17 /* Info-Debug.plist */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -175,10 +177,12 @@
 			buildConfigurationList = 2C5FD4BF277466D600317AFC /* Build configuration list for PBXNativeTarget "App" */;
 			buildPhases = (
 				828FDDBA92D4ADE240A6EA81 /* [CP] Check Pods Manifest.lock */,
+				6140F2BCD106226F709F800B /* [CP-User] Run Flutter Build flutter_module Script */,
 				2C5FD491277466D500317AFC /* Sources */,
 				2C5FD492277466D500317AFC /* Frameworks */,
 				2C5FD493277466D500317AFC /* Resources */,
 				2C5FD4C82774680A00317AFC /* ShellScript */,
+				33331CEF25C9C6A1EE5A849D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,6 +220,7 @@
 				2C5FD4B1277466D600317AFC /* Sources */,
 				2C5FD4B2277466D600317AFC /* Frameworks */,
 				2C5FD4B3277466D600317AFC /* Resources */,
+				9CFAB97A47F24531022EF8BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -313,7 +318,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# \"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		33331CEF25C9C6A1EE5A849D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-App/Pods-App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-App/Pods-App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-App/Pods-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6140F2BCD106226F709F800B /* [CP-User] Run Flutter Build flutter_module Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build flutter_module Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 		738B08A2FE5D9C36053E36B4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -381,6 +413,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9CFAB97A47F24531022EF8BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-App-AppUITests/Pods-App-AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-App-AppUITests/Pods-App-AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-App-AppUITests/Pods-App-AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -389,8 +438,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C5FD49D277466D500317AFC /* ViewController.swift in Sources */,
+				2CD989E7277D82FB00D91453 /* BootDelegate.swift in Sources */,
 				2C5FD499277466D500317AFC /* AppDelegate.swift in Sources */,
-				2C5FD49B277466D500317AFC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,7 +621,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DMEGL5CEM3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_FILE = "App/Info-Debug.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
