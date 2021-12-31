@@ -1,24 +1,24 @@
 PODS:
   - Flutter (1.0.0)
-  - flutter_boost (0.0.2):
-    - Flutter
   - flutter_module (0.0.1):
     - Flutter
   - FlutterPluginRegistrant (0.0.1):
     - Flutter
-    - flutter_boost
+  - SwiftLint (0.45.1)
 
 DEPENDENCIES:
   - Flutter (from `../flutter_module/.ios/Flutter/engine`)
-  - flutter_boost (from `../flutter_module/.ios/.symlinks/plugins/flutter_boost/ios`)
   - flutter_module (from `../flutter_module/.ios/Flutter`)
   - FlutterPluginRegistrant (from `../flutter_module/.ios/Flutter/FlutterPluginRegistrant`)
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - SwiftLint
 
 EXTERNAL SOURCES:
   Flutter:
     :path: "../flutter_module/.ios/Flutter/engine"
-  flutter_boost:
-    :path: "../flutter_module/.ios/.symlinks/plugins/flutter_boost/ios"
   flutter_module:
     :path: "../flutter_module/.ios/Flutter"
   FlutterPluginRegistrant:
@@ -26,10 +26,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: bdfa2e8fe0e2880a2c6a58a0b1a8675c262a07af
-  flutter_boost: 6a73c54e5654df180c2cc379045b8cba9746fc8a
   flutter_module: d1e1ff44505640bd9aa37f23f63380c646272be4
-  FlutterPluginRegistrant: 03a06fa5f754c611bb6c96f42acf9432e8c4515d
+  FlutterPluginRegistrant: 2afd5ea46d3a949472c9b7da6462d8fbf7d8b16e
+  SwiftLint: 06ac37e4d38c7068e0935bb30cda95f093bec761
 
-PODFILE CHECKSUM: 764e9d2066986176a44edd9d5c329d2f58d3673a
+PODFILE CHECKSUM: 522427a131afaaf11b9c1f0e2950700a85e4e1f4
 
 COCOAPODS: 1.11.2
