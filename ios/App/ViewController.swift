@@ -15,11 +15,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .white
-
-
-        let button = UIButton(type: UIButton.ButtonType.system, primaryAction: UIAction.init(handler: { [weak self] action in
-            self?.toFlutter()
-        }))
+        
+        let button = UIButton(type: .system)
+        button.addTarget(self, action: #selector(toFlutter), for: UIControl.Event.touchUpInside)
 
         button.frame = CGRect(origin: .zero, size: .init(width: 100, height: 100))
         button.backgroundColor = UIColor.orange
@@ -31,7 +29,7 @@ class ViewController: UIViewController {
     }
 
 
-    func toFlutter() {
+    @objc func toFlutter() {
         FlutterBoost.instance().open("mainPage", arguments: ["data":"这是自定义的数据"], completion: nil)
     }
 }
